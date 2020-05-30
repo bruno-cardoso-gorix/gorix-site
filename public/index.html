@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gorix</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.6.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.6.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.6.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.6.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.6.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+  <article id="main">
+    <section id="banner" class="content-wrapper">
+      <figure class="logo-gorix">
+        <img src="logo-gorix.png" class="img-fluid">
+      </figure>
+      <div class="content-absolute">
+        <figure class="text-center">
+          <img src="logo.png" class="img-fluid">
+        </figure>
+        <header class="text-center">
+          <h1>Estacionamentos como um Hub da <br><b>mobilidade urbana</b></h1>
+        </header>
+
+        <div class="text-center mt-30">
+          <a href="#contato" class="btn btn-lg btn-green">Entrar em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="estacinamento" class="content-wrapper">
+      <div class="container content-wrapper">
+        <header class="page-header">
+          <h1>Uma nova forma de utilizar o <span>Estacionamento</span></h1>
+        </header>
+
+        <p>A mobilidade urbana está sofrendo grandes mudanças e a <b>gorix</b> está trazendo soluções que vão manter o seu estacionamento rentável.</p>
+
+        <div class="col-sm-10 offset-sm-1">
+          <div class="row">
+            <div class="col-sm-4">
+              <figure>
+                <img src="servico.png" alt="" />
+              </figure>
+            </div>
+
+            <div class="col-sm-4">
+              <figure>
+                <img src="servico.png" alt="" />
+              </figure>
+            </div>
+
+            <div class="col-sm-4">
+              <figure>
+                <img src="servico.png" alt="" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="content-wrapper">
+      <div class="container content-wrapper">
+        <header class="page-header text-center">
+          <h1>Como Funciona</h1>
+          <p>Veja como nosso produto poderá ser utilizado pelos seus clientes.</p>
+        </header>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="passos-como-funciona">
+              <div class="passo-item">
+                <figure>
+                  <img src="passo.png" alt="" />
+                </figure>
+                <div class="dados">
+                  <h3>Passo 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus.</p>
+                </div>
+              </div>
+
+              <div class="passo-item">
+                <figure>
+                  <img src="passo.png" alt="" />
+                </figure>
+                <div class="dados">
+                  <h3>Passo 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus.</p>
+                </div>
+              </div>
+
+              <div class="passo-item">
+                <figure>
+                  <img src="passo.png" alt="" />
+                </figure>
+                <div class="dados">
+                  <h3>Passo 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <figure class="aplicativo-small visible-xs">
+            <img src="aplicativo.png" class="img-fluid">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <div class="row mt-40">
+          <div class="col-sm-6">
+            <header class="page-header">
+              <h1>Entre em <b>Contato</b></h1>
+            </header>
+          </div>
+
+          <div class="col-sm-6 mt-40">
+            <p class="text-center">Entrare-mos em contato o mais breve possivel!</p>
+            <form class="mt-30">
+              <input type="text" name="mensagem" class="form-control" placeholder="Digite seu mensagem" required="true" />
+
+              <div class="row">
+                <div class="col-sm-8">
+                  <input type="email" name="email" class="form-control" placeholder="Digite seu melhor email" required="true" />
+                </div>
+                <div class="col-sm-4">
+                  <button type="submit" class="btn btn-block btn-green">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="covid" class="content-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <header class="page-header">
+              <h1>Combate a Covid-19</h1>
+              <p>Conheça sobre nossa solução para ajudar ao combate do covid-19 para seu estabelecimento</p>
+            </header>
+
+            <div class="perguntas-respostas">
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <figure>
+              <img src="higienizacao-covid.png" alt="" class="img-responsive"/>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="content-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <header class="page-header">
+              <h1>FAQ</h1>
+              <p>Conheça sobre nossa solução para ajudar ao combate do covid-19 para seu estabelecimento</p>
+              <a href="#">
+                <figure>
+                  <img src="button-google-play.png" alt="" class="img-responsive">
+                </figure>
+              </a>
+            </header>
+          </div>
+
+          <div class="col-sm-6 offset-sm-1">
+            <div class="perguntas-respostas">
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+              <div class="item-default">
+                <div class="pergunta">Lorem Ipsum Dolar</div>
+                <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+  </article>
+
+  <footer id="rodape">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <figure>
+            <img src="logomarca.png" class="img-fluid">
+          </figure>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur.</p>
+        </div>
+
+        <div class="col-sm-3 offset-sm-3 mt-100">
+          <a href="#">
+            <figure>
+              <img src="button-google-play.png" alt="" class="img-responsive">
+            </figure>
+          </a>
+        </div>
+
+        <div class="col-sm-2 mt-100">
+          <ul class="redes-sociais">
+            <li><a href="#" target="_blank"><img src="ic-linkedin.svg"></a></li>
+            <li><a href="#" target="_blank"><img src="ic-facebook.svg"></a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <hr />
+
+      <div class="text-center">
+        <p>Gorix - Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="plugins.js"></script>
+  <script src="main.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          // document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          // document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+
+        $( document ).ready(function() {
+          $("#formulario-contato").on("submit", function(event){
+            var nome = $("input[name=nome]").val();
+            var email = $("input[name=email]").val();
+            var telefone = $("input[name=telefone]").val();
+            var tipo = $("select[name=tipo]").val();
+            writeUserData(nome, email, telefone, tipo);
+            event.preventDefault();
+          });
+        });
+        
+        function writeUserData(nome, email, telefone, tipo) {
+          var rootRef = firebase.database().ref("users");
+          var childKey = rootRef.push().key;
+          rootRef.child(childKey).set({
+            nome: nome,
+            email: email,
+            telefone: telefone,
+            tipo : tipo
+          }, function(error){
+            if(error){
+              $("#form-alert-error").toggleClass("hidden");
+            }else{
+              $("#form-alert-success").toggleClass("hidden");
+              cleanFormContact();
+            }
+          });
+        };
+
+        function cleanFormContact(){
+          $("#formulario-contato").trigger("reset");
+        };
+      });
+    </script>
+  </body>
+</html>
