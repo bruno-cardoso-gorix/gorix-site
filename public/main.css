@@ -384,15 +384,20 @@ textarea {
 
 #estacinamento {
   position: relative;
+  padding-top: 120px;
   background: url("bg-servicos.png") center bottom no-repeat;
 }
 
-#estacinamento::after{
+#estacinamento .page-header {
+  margin-bottom: 80px;
+}
+
+#estacinamento::after {
   content: "";
   position: absolute;
   left: 0;
   width: 100%;
-  height: 180px;
+  height: 120px;
   z-index: 9;
   bottom: 100%;
   background: url("after-servicos.png") center top no-repeat;
@@ -403,9 +408,43 @@ textarea {
   background: url("bg-como-funciona.png") center bottom no-repeat;
 }
 
+#como-funciona .passos-como-funciona {
+  margin-top: 80px;
+}
+
+#como-funciona .passos-como-funciona .passo-item:nth-child(even) .dados {
+  text-align: right;
+}
+
+#como-funciona .passos-como-funciona .passo-item figure{
+  margin-right: 25px;
+}
+
+#como-funciona .passos-como-funciona .passo-item:nth-child(even) figure{
+  margin-left: 25px;
+  margin-right: 0;
+  order: 2 !important;
+}
+#como-funciona .passo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#como-funciona .passo-item .dados h3{
+  font-family: "montserratbold";
+  font-size: 30px;
+  color: #FFF;
+}
+
+#como-funciona .passo-item .dados p{
+  font-family: "montserratregular";
+  font-size: 14px;
+  color: #FFF;
+}
+
 #como-funciona .page-header h1{
   font-family: "montserratbold";
-  font-weight: bold;
   font-size: 40px;
   margin-bottom: 20px;
   color: #FFF;
@@ -433,14 +472,18 @@ textarea {
 }
 
 #como-funciona::after{
-  bottom: 100%;
+  bottom: 0%;
   background: url("after-como-funciona.png") center bottom no-repeat;
 }
 
 #covid {
   position: relative;
   padding-top: 120px;
-  background: url("bg-covid.png") center bottom no-repeat;
+  background: url("bg-covid.png") center bottom repeat-y;
+}
+
+#covid figure {
+  display: inline-block;
 }
 
 #covid .page-header h1{
@@ -467,6 +510,45 @@ textarea {
   z-index: 10;
   top: 0;
   background: url("after-covid.png") center bottom no-repeat;
+}
+
+.carousel-default{
+  display: block;
+  position: relative;
+}
+
+.carousel-default .pager:hover {
+  cursor: pointer;
+}
+
+.carousel-default .pager {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  z-index: 199 !important;
+
+  background: #27AE60;
+}
+
+.carousel-default .pager .fa { color: #fff; }
+
+.carousel-default .pager-prev {
+  left: 0;
+  transform: translateY(-100%) translateX(30%);
+  text-align: left;
+}
+
+.carousel-default .pager-next {
+  right: 0;
+  transform: translateY(-100%) translateX(-30%);
+  text-align: right;
 }
 
 #faq {
@@ -518,7 +600,10 @@ textarea {
 }
 
 #estacinamento .container,
-#estacinamento .container .row,
+#estacinamento .container .row {
+
+}
+
 #aplicativo .container,
 #aplicativo .container .row{
   min-height: 100vh;
@@ -602,6 +687,18 @@ textarea {
   border-radius: 25px !important;
   color: #FFF;
   background: #00FF00;
+}
+
+.btn-outline-green{
+  height: 50px;
+  border-radius: 25px !important;
+  color: #FFF;
+  border: 1px solid #27AE60;
+  background: transparent;
+}
+
+.btn-outline-green:hover{
+  border-color: #27AE60;
 }
 
 .btn-green:hover{
@@ -689,6 +786,7 @@ textarea {
 }
 
 #contato p{
+  font-family: "montserratregular";
   font-size: 24px;
   color: #131313;
 }
@@ -698,6 +796,11 @@ textarea {
   height: 50px;
   border-radius: 25px;
   border: 1px solid #1CC81C;
+}
+
+#contato .form-control::placeholder{
+  font-family: "montserratregular";
+  font-size: 14px;
 }
 
 #rodape{
@@ -726,21 +829,85 @@ textarea {
   margin: 0 10px;
 }
 
-.aplicativo-small{
-  display: none;
+.aplicativo{
+  display: inline-block;
+}
+
+.video-container{
+  position: relative;
+  text-align: center;
+  padding-top: 120px;
+  z-index: 100;
+  background: url('aplicativo.png') center top no-repeat;
+}
+.video{
+  display: inline-block;
+  width: 365px;
+  height: 610px;
+  background: #000;
 }
 
 .perguntas-respostas .item-default {
   position: relative;
+  margin-bottom: 15px;
+  padding: 8px 12px ;
+  background: #FFF;
 }
+
 .perguntas-respostas .item-default .pergunta {
-  /* border: 1px solid red; */
+  font-family: "montserratregular";
+  font-size: 16px;
+  color: #131313;
+  transition: height 1s;
+  position: relative;
+}
+
+.perguntas-respostas .item-default .pergunta::before {
+  content: "\f13a";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  font-family: "FontAwesome";
+  color: #27AE60;
+  transform: translateY(-50%);
+}
+
+.perguntas-respostas .active .pergunta::before {
+  content: "\f139";
+  color: #AE2727;
 }
 
 .perguntas-respostas .item-default .resposta {
-  display: none;
+  position: relative;
+  font-family: "montserratregular";
+  font-size: 14px;
+  color: #131313;
+  height: 0;
+  overflow: hidden;
 }
 
+.perguntas-respostas .item-default:hover{
+  cursor: pointer;
+}
+
+.perguntas-respostas .active .resposta {
+  height: auto;
+}
+
+.perguntas-respostas-outline .item-default {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+.perguntas-respostas-outline .item-default .resposta,
+.perguntas-respostas-outline .item-default .pergunta,
+.perguntas-respostas-outline .item-default .pergunta::before {
+  color: #FFF !important;
+}
+
+.perguntas-respostas-outline .active .pergunta::before {
+  color: #AE2727 !important;
+}
 /************
 * Media Query
 *************/

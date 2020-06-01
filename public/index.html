@@ -12,14 +12,19 @@
     <script defer src="/__/firebase/7.6.2/firebase-database.js"></script>
     <script defer src="/__/firebase/7.6.2/firebase-messaging.js"></script>
     <script defer src="/__/firebase/7.6.2/firebase-storage.js"></script>
+    
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
 
   </head>
   <body>
@@ -43,15 +48,15 @@
       </div>
     </section>
 
-    <section id="estacinamento" class="content-wrapper">
+    <section id="estacinamento" class="content-no-wrapper">
       <div class="container content-wrapper">
         <header class="page-header">
           <h1>Uma nova forma de utilizar o <span>Estacionamento</span></h1>
         </header>
 
-        <p>A mobilidade urbana está sofrendo grandes mudanças e a <b>gorix</b> está trazendo soluções que vão manter o seu estacionamento rentável.</p>
+        <p class="text-center">A mobilidade urbana está sofrendo grandes mudanças e a <b>gorix</b> está trazendo soluções que vão manter o seu estacionamento rentável.</p>
 
-        <div class="col-sm-10 offset-sm-1">
+        <div class="col-sm-10 offset-sm-1 mt-150">
           <div class="row">
             <div class="col-sm-4">
               <figure>
@@ -83,7 +88,7 @@
         </header>
 
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-sm-7">
             <div class="passos-como-funciona">
               <div class="passo-item">
                 <figure>
@@ -117,9 +122,11 @@
             </div>
           </div>
 
-          <figure class="aplicativo-small visible-xs">
-            <img src="aplicativo.png" class="img-fluid">
-          </figure>
+          <div class="col-sm-5 text-right">
+            <div class="video-container">
+              <div class="video"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -143,7 +150,7 @@
                   <input type="email" name="email" class="form-control" placeholder="Digite seu melhor email" required="true" />
                 </div>
                 <div class="col-sm-4">
-                  <button type="submit" class="btn btn-block btn-green">Enviar</button>
+                  <button type="submit" class="btn btn-block btn-outline-green">Enviar</button>
                 </div>
               </div>
             </form>
@@ -152,7 +159,7 @@
       </div>
     </section>
 
-    <section id="covid" class="content-wrapper">
+    <section id="covid" class="content-no-wrapper">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
@@ -162,7 +169,7 @@
             </header>
 
             <div class="perguntas-respostas">
-              <div class="item-default">
+              <div class="item-default active">
                 <div class="pergunta">Lorem Ipsum Dolar</div>
                 <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
               </div>
@@ -189,17 +196,30 @@
             </div>
           </div>
 
-          <div class="col-sm-6">
-            <figure>
-              <img src="higienizacao-covid.png" alt="" class="img-responsive"/>
-            </figure>
+          <div class="col-sm-6 text-center mt-40 mb-20">
+            <div class="carousel-default">
+              <div class="pager pager-prev"><i class="fa fa-chevron-left"></i></div>
+              <div class="pager pager-next"><i class="fa fa-chevron-right"></i></i></div>
+            
+              <div class="owl-carousel owl-theme">
+                <figure>
+                  <img src="higienizacao-covid.png" alt="" class="img-responsive"/>
+                </figure>
+                <figure>
+                  <img src="higienizacao-covid.png" alt="" class="img-responsive"/>
+                </figure>
+                <figure>
+                  <img src="higienizacao-covid.png" alt="" class="img-responsive"/>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="faq" class="content-wrapper">
-      <div class="container">
+      <div class="container mt-100">
         <div class="row">
           <div class="col-sm-5">
             <header class="page-header">
@@ -214,8 +234,8 @@
           </div>
 
           <div class="col-sm-6 offset-sm-1">
-            <div class="perguntas-respostas">
-              <div class="item-default">
+            <div class="perguntas-respostas perguntas-respostas-outline mt-100">
+              <div class="item-default active">
                 <div class="pergunta">Lorem Ipsum Dolar</div>
                 <div class="resposta">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fringilla mi eget odio condimentum elementum. Morbi volutpat nulla in sem finibus, ut dictum massa consectetur. Quisque non nulla ac enim laoreet fermentum. Duis mollis nunc at ornare malesuada. Donec in vulputate mauris, vitae posuere odio. Vestibulum convallis pharetra nibh, in convallis libero aliquet sit amet. Proin lobortis dolor eget auctor tempus.</div>
               </div>
@@ -308,6 +328,29 @@
         }
 
         $( document ).ready(function() {
+          $('.owl-carousel').owlCarousel({
+            items:1,
+          });
+          
+          var owl = $('.owl-carousel');
+          owl.owlCarousel();
+          // Go to the next item
+          $('.pager-prev').click(function() {
+              owl.trigger('owl.prev');
+          })
+          // Go to the previous item
+          $('.pager-next').click(function() {
+              owl.trigger('owl.next');
+          })
+          
+          // $('.pager-prev').on('click', {
+          //   $('.owl-carousel').prev();
+          // });
+          
+          // $('.pager-next').on('click', {
+          //   $('.owl-carousel').next();
+          // });
+        
           $("#formulario-contato").on("submit", function(event){
             var nome = $("input[name=nome]").val();
             var email = $("input[name=email]").val();
