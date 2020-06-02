@@ -291,8 +291,55 @@ textarea {
   }
 }
 
+
 .content-wrapper{
     min-height: 100vh;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 1999;
+  top: 1;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, .8);
+}
+
+nav figure {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+nav ul li:last-child a {
+  color: #AE2727;
+}
+
+nav ul li {
+  display: inline-block;
+}
+nav ul .active a {
+  color: #27AE60;
+}
+
+nav ul li a {
+  font-family: "montserratregular";
+  color: #131313;
+  margin: 15px 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #27AE60;
+  text-decoration: none;
 }
 
 #banner{
@@ -384,7 +431,7 @@ textarea {
 
 #estacinamento {
   position: relative;
-  padding-top: 120px;
+  padding: 40px 0 100px;
   background: url("bg-servicos.png") center bottom no-repeat;
 }
 
@@ -401,6 +448,36 @@ textarea {
   z-index: 9;
   bottom: 100%;
   background: url("after-servicos.png") center top no-repeat;
+}
+
+.servico-default {
+  position: relative;
+}
+
+.servico-default::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  background: rgba(20, 150, 20, 0.2);
+  border: 10px solid #1CC81C;
+  transform: translateX(-50%);
+}
+
+.servico-default figure {
+  position: relative;
+  z-index: 99;
+}
+
+.servico-default h4{
+  display: block;
+  font-family: "montserratregular";
+  font-size: 18px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 #como-funciona {
@@ -443,6 +520,10 @@ textarea {
   color: #FFF;
 }
 
+#como-funciona .page-header {
+  margin-top: 40px;
+}
+
 #como-funciona .page-header h1{
   font-family: "montserratbold";
   font-size: 40px;
@@ -472,7 +553,7 @@ textarea {
 }
 
 #como-funciona::after{
-  bottom: 0%;
+  bottom: 100%;
   background: url("after-como-funciona.png") center bottom no-repeat;
 }
 
@@ -541,13 +622,13 @@ textarea {
 
 .carousel-default .pager-prev {
   left: 0;
-  transform: translateY(-100%) translateX(30%);
+  transform: translateY(-100%) translateX(10%);
   text-align: left;
 }
 
 .carousel-default .pager-next {
   right: 0;
-  transform: translateY(-100%) translateX(-30%);
+  transform: translateY(-100%) translateX(-10%);
   text-align: right;
 }
 
@@ -599,11 +680,6 @@ textarea {
   z-index: -1;
 }
 
-#estacinamento .container,
-#estacinamento .container .row {
-
-}
-
 #aplicativo .container,
 #aplicativo .container .row{
   min-height: 100vh;
@@ -615,21 +691,6 @@ textarea {
   height: 100%;
 }
 
-#estacinamento .content-before::before,
-#aplicativo .content-before::before{
-  content: "";
-  display: inline-block;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-}
-
-#estacinamento .content-before::before{
-  width: 600px;
-  left: 110%;
-  background: url("estacionamentos.png") center center no-repeat;
-}
 #como-funciona .content-before::before,
 #aplicativo .content-before::before{
   width: 450px;
@@ -883,7 +944,10 @@ textarea {
   font-size: 14px;
   color: #131313;
   height: 0;
-  overflow: hidden;
+  max-height: 130px;
+
+  overflow: scroll;
+  transition: all 0.5s;
 }
 
 .perguntas-respostas .item-default:hover{
@@ -891,7 +955,7 @@ textarea {
 }
 
 .perguntas-respostas .active .resposta {
-  height: auto;
+  height: 130px;
 }
 
 .perguntas-respostas-outline .item-default {
